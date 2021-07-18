@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('./partials/head.ejs'); %>
+</head>
+
+<body>
+    <%- include('./partials/navbar.ejs'); %>
+
+        <div>
+            <div class="container">
+                <div class="text-center text-dark" style='padding: 0px 0px 80px'>
+                    <h1 style='margin-top: 190px'>Контакты</h1>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="container">
+                <div class="contacts">
+                    <div class="row row-cols-2 row-cols-md-3 text-center">
+                        <div class="col">
+                            <div class="mx-auto bg-light" style='max-width: 450px; max-height:375px; padding: 15px 15px 15px 15px; border-radius: 18px; box-shadow: 0 13px 68px rgba(8,9,12,.29); margin-bottom: 25px;'>
+                                <img style='margin-left:8px; width: 95%; max-width: 400px; display: block; border-radius: 21px; box-shadow: 0 13px 68px rgba(8,9,12,.29);' src='/img/contact/mail.png' alt=''>
+                                <h3 class="text-center vertical-align-middle text-dark" style='margin: 10px 0 15px;'>Электронная почта</h3>
+                                <h5 class="text-center vertical-align-middle text-dark" style='margin: 10px 0 15px;'>support@fame-community.ru</h5>
+                                <a href='mailto:support@fame-community.ru' class='text-decoration-none'><button type="button" class="btn btn-lg btn-outline-primary" style = 'box-shadow: 0 13px 68px rgba(8,9,12,.29); min-width: 150px; margin-bottom: 10px'>Перейти</button></a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="mx-auto bg-light" style='max-width: 450px; max-height:375px; padding: 15px 15px 15px 15px; border-radius: 18px; box-shadow: 0 13px 68px rgba(8,9,12,.29); margin-bottom: 25px;'>
+                                <img style='margin-left:8px; width: 95%; max-width: 400px; display: block; border-radius: 21px; box-shadow: 0 13px 68px rgba(8,9,12,.29);' src='/img/contact/vk.png' alt=''>
+                                <h3 class="text-center vertical-align-middle text-dark" style='margin: 10px 0 15px;'>ВКонтакте</h3>
+                                <h5 class="text-center vertical-align-middle text-dark" style='margin: 10px 0 15px;'>Оффициальное сообщество</h5>
+                                <a href='https://vk.com/famesrv' class='text-decoration-none'><button type="button" class="btn btn-lg btn-outline-primary" style = 'box-shadow: 0 13px 68px rgba(8,9,12,.29); min-width: 150px; margin-bottom: 10px'>Перейти</button></a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="mx-auto bg-light" style='max-width: 450px; max-height:375px; padding: 15px 15px 15px 15px; border-radius: 18px; box-shadow: 0 13px 68px rgba(8,9,12,.29); margin-bottom: 25px;'>
+                                <img style='margin-left:8px; width: 95%; max-width: 400px; display: block; border-radius: 21px; box-shadow: 0 13px 68px rgba(8,9,12,.29);' src='/img/contact/telegram.png' alt=''>
+                                <h3 class="text-center vertical-align-middle text-dark" style='margin: 10px 0 15px;'>Telegram</h3>
+                                <h5 class="text-center vertical-align-middle text-dark" style='margin: 10px 0 15px;'>Оффициальный канал</h5>
+                                <a href='https://t.me/famesrv' class='text-decoration-none'><button type="button" class="btn btn-lg btn-outline-primary" style = 'box-shadow: 0 13px 68px rgba(8,9,12,.29); min-width: 150px; margin-bottom: 10px'>Перейти</button></a>
+                            </div>
+                        </div>
+                        <div class="col" style='margin-top: 20px'>
+                            <div class="mx-auto bg-light" style='max-width: 450px; max-height:375px; padding: 15px 15px 15px 15px; border-radius: 18px; box-shadow: 0 13px 68px rgba(8,9,12,.29); margin-bottom: 25px;'>
+                                <img style='margin-left:8px; width: 95%; max-width: 400px; display: block; border-radius: 21px; box-shadow: 0 13px 68px rgba(8,9,12,.29);' src='/img/contact/steam.png' alt=''>
+                                <h3 class="text-center vertical-align-middle text-dark" style='margin: 10px 0 15px;'>Steam</h3>
+                                <h5 class="text-center vertical-align-middle text-dark" style='margin: 10px 0 15px;'>Оффициальная группа</h5>
+                                <a href='https://steamcommunity.com/groups/famesrv' class='text-decoration-none'><button type="button" class="btn btn-lg btn-outline-primary" style = 'box-shadow: 0 13px 68px rgba(8,9,12,.29); min-width: 150px; margin-bottom: 10px'>Перейти</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <%- include('./partials/footer.ejs'); %>
+
+            <%- include('./partials/body-scripts.ejs'); %>
+</body>
+
+</html>

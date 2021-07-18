@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('./partials/head.ejs'); %>
+</head>
+
+<body>
+    <%- include('./partials/navbar.ejs'); %>
+
+        <div>
+            <div class="container">
+                <div class="text-center text-dark" style='padding: 0px 0px 80px'>
+                    <h1 style='margin-top: 190px'>Пользовательское соглашение</h1>
+                    <a href="/rules" class='text-secondary text-decoration-none'>Назад</a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="container">
+                <div class="contents">
+                    <h3 class='text-dark'>1. Оглавление</h3>
+                    <ol style='margin-left: 50px'>
+                        <li><a class='text-decoration-none text-secondary' href='#contents' onclick="slowScroll('#contents')">Оглавление</a></li>
+                        <li><a class='text-decoration-none text-secondary' href='#user-accounts' onclick="slowScroll('#user-accounts')">Учетная запись пользователя</a></li>
+                        <li><a class='text-decoration-none text-secondary' href='#ingame-values' onclick="slowScroll('#ingame-values')">Внутриигровые предметы, внутриигровая валюта и внутриигровые привилегии</a></li>
+                        <li><a class='text-decoration-none text-secondary' href='#renouncement' onclick="slowScroll('#renouncement')">Право на отказ</a></li>
+                        <li><a class='text-decoration-none text-secondary' href='#limited-license' onclick="slowScroll('#limited-license')">Ограниченная лицензия</a></li>
+                        <li><a class='text-decoration-none text-secondary' href='#sanctions' onclick="slowScroll('#sanctions')">Санкции</a></li>
+                        <li><a class='text-decoration-none text-secondary' href='#health' onclick="slowScroll('#health')">Здоровье пользователей</a></li>
+                    </ol>
+                </div>
+                <div class="user-accounts" id='user-accounts'>
+                    <h3 class='text-dark'>2. Учетная запись пользователя</h3>
+                    <div class='user-accounts-additional' style='padding-bottom: 30px'>
+                        <h4 class='user-accounts-1' id='user-accounts-1' style='margin-left: 50px'>2.1. При игре на нашем сервере пользователь соглашается с действующими <a class='text-decoration-none text-primary' href='/rules-server'>«Правилами сервера»</a> и <a class='text-decoration-none text-primary' href='#' onclick="slowScroll('#contents')">«Пользовательским соглашением»</a>.</h4>
+                        <h4 class='user-accounts-2' id='user-accounts-2' style='margin-left: 50px'>2.2. Учетная запись пользователя предназначена для его личного некоммерческого использования.</h4>
+                        <h4 class='user-accounts-3' id='user-accounts-3' style='margin-left: 50px'>2.3. В случае, если пользователь узнает или подозревает о любом нарушении безопасности, пользователь должен немедленно уведомить тех.поддержку сервера и изменить свой пароль в Steam. В отсутствие такого своевременного уведомления
+                            мы не может гарантировать безопасность вашего игрового аккаунта.</h4>
+                        <h4 class='user-accounts-4' id='user-accounts-4' style='margin-left: 50px'>2.4. Запрещается использовать учетную запись другого пользователя без разрешения этого пользователя.</h4>
+                    </div>
+                </div>
+                <div class="ingame-values" id="ingame-values">
+                    <h3 class='text-dark'>3. Внутриигровые предметы, внутриигровая валюта и внутриигровые привилегии</h3>
+                    <div class='ingame-values-additional' style='padding-bottom: 30px'>
+                        <h4 class='ingame-values-1' id='ingame-values-1' style='margin-left: 50px'>3.1. Пользователь признает, что мы может предоставить пользователю возможность приобрести дополнительные внутриигровые предметы и/или внутриигровую валюту.</h4>
+                        <h4 class='ingame-values-2' id='ingame-values-2' style='margin-left: 50px'>3.2. Внутриигровая валюта не является средством платежа и служит единственной целью в качестве средства обмена на внутриигровые предметы. Внутриигровую валюту нельзя обменять на реальные деньги или другие ценности</h4>
+                        <h4 class='ingame-values-3' id='ingame-values-3' style='margin-left: 50px'>3.3. Мы зачислим внутриигровую валюту и/или внутриигровые привилегии на учетную запись пользователя после получения оплаты.</h4>
+                        <h4 class='ingame-values-4' id='ingame-values-4' style='margin-left: 50px'>3.4. Мы не гарантирует, что:
+                            <ol class='fs-5' style='margin-left: 25px'>
+                                <li>Желаемые внутриигровые предметы будут доступны;</li>
+                                <li>Пользователь сможет использовать внутриигровые предметы в течение неопределенного или желаемого периода;</li>
+                                <li>Пользователь сможет обменять внутриигровую валюту на какие-либо или определенные внутриигровые предметы;</li>
+                            </ol>
+                        </h4>
+                    </div>
+                </div>
+                <div class="renouncement" id="renouncement">
+                    <h3 class='text-dark'>4. Право на отказ</h3>
+                    <div class='renouncement-additional' style='padding-bottom: 30px'>
+                        <h4 class='renouncement-1' id='renouncement-1' style='margin-left: 50px'>4.1. Все сборы, подлежащие оплате за внутриигровые привилегии, внутриигровые предметы и/или внутриигровую валюту, не подлежат возврату.</h4>
+                        <h4 class='renouncement-2 text-danger' id='renouncement-2' style='margin-left: 50px'>КРОМЕ ТОГО, РАСХОДЫ И ПОКУПКИ НЕ ПОДЛЕЖАТ ВОЗМЕЩЕНИЮ В СЛУЧАЕ, ЕСЛИ ПОЛЬЗОВАТЕЛЬ НЕДОВОЛЕН ИГРОЙ ИЛИ СЕРВЕРОМ.</h4>
+                        <h4 class='renouncement-3' id='renouncement-3' style='margin-left: 50px'>4.2. Запрещена передача внутриигровой валюты/предметов за реальные деньги/скины.</h4>
+                    </div>
+                </div>
+                <div class="limited-license" id="limited-license">
+                    <h3 class='text-dark'>5. Ограниченная лицензия</h3>
+                    <div class='limited-license-additional' style='padding-bottom: 30px'>
+                        <h4 class='limited-license-1' id='limited-license-1' style='margin-left: 50px'>5.1. Пользователь соглашается и признает, что любые и все права интеллектуальной собственности принадлежат нам.</h4>
+                        <h4 class='limited-license-2' id='limited-license-2' style='margin-left: 50px'>5.2. Запрещено сдавать в аренду/передавать/обменивать учетную запись.</h4>
+                        <h4 class='limited-license-3' id='limited-license-3' style='margin-left: 50px'>5.3. Запрещено перегружать сервер, мешать другим игрокам.</h4>
+                    </div>
+                </div>
+                <div class="sanctions" id="sanctions">
+                    <h3 class='text-dark'>6. Санкции</h3>
+                    <div class='sanctions-additional' style='padding-bottom: 30px'>
+                        <h4 class='sanctions-1' id='sanctions-1' style='margin-left: 50px'>6.1. Мы имеем право применить следующие санкции к пользователю, в зависимости от степени нарушения, совершенного пользователем:
+                            <ol class='fs-5' style='margin-left: 25px'>
+                                <li>Выдать предупреждение в любой форме;</li>
+                                <li>Удалить любой пользовательский контент, который нарушает любое положение применимого законодательства или нарушает пользовательское соглашение, в частности, <a class='text-decoration-none text-primary' href='/server-rules'>правила сервера</a>;</li>
+                                <li>Переименовать, только если это необходимо (например, оскорбительное название), его клана;</li>
+                                <li>Временно ограничить некоторый функционал учетной записи;</li>
+                                <li>Приостановить доступ к его учетной(-ым) записи(-ям) и/или учетной(-ым) записи(-ям) на сервере в полном объеме;</li>
+                                <li>Ограничить использование учетной записи полностью или частично;</li>
+                                <li>Удалить его учетную запись или привилегию;</li>
+                            </ol>
+                        </h4>
+                    </div>
+                </div>
+                <div class="health" id="health">
+                    <h3 class='text-dark'>7. Здоровье пользователей</h3>
+                    <div class='health-additional' style='padding-bottom: 30px'>
+                        <h4 class='health-1' id='health-1' style='margin-left: 50px'>Пользователи должны соблюдать следующие меры предосторожности:
+                            <ol class='fs-5' style='margin-left: 25px'>
+                                <li>Не играйте, если вы устали или недосыпаете;</li>
+                                <li>Играйте на большом расстоянии от экрана;</li>
+                                <li>Играйте в освещенной комнате и умерьте яркость экрана;</li>
+                                <li>Делайте перерывы от десяти(10) до пятнадцати(15) минут каждый час;</li>
+                            </ol>
+                        </h4>
+                    </div>
+                </div>
+                <h4 style='margin-bottom: 50px'>Данное пользовательское соглашение может быть изменено в любое время, без какого-либо предупреждения.</h4>
+            </div>
+        </div>
+
+
+        <%- include('./partials/footer.ejs'); %>
+
+            <%- include('./partials/body-scripts.ejs'); %>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('./partials/head.ejs'); %>
+</head>
+
+<body>
+    <%- include('./partials/navbar.ejs'); %>
+        <div style='margin-bottom: 165px'>
+            <div class="container">
+                <div class="text-center text-dark" style='padding: 0px 0px 80px'>
+                    <h1 style='margin-top: 190px'>Обязательно к ознакомлению</h1>
+                </div>
+                <div class="row row-cols-1 row-cols-md-3 text-center">
+                    <div class="col">
+                        <div class="mx-auto bg-light" style='max-width: 400px; max-height:350px; padding: 15px 15px 15px 15px; border-radius: 18px; box-shadow: 0 13px 68px rgba(8,9,12,.29); margin-bottom: 25px;'>
+                            <img style='margin-left:8px; width: 95%; max-width: 400px; display: block; border-radius: 21px; box-shadow: 0 13px 68px rgba(8,9,12,.29);' src='/img/rules/server.jpg' alt=''>
+                            <h3 class="text-center vertical-align-middle text-dark" style='margin: 10px 0 15px;'>Правила сервера</h3>
+                            <a href='/rules-server' class='text-decoration-none'><button type="button" class="btn btn-lg btn-outline-primary" style = 'box-shadow: 0 13px 68px rgba(8,9,12,.29); min-width: 150px; margin-bottom: 10px'>Перейти</button></a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="mx-auto bg-light" style='max-width: 400px; max-height:350px; padding: 15px 15px 15px 15px; border-radius: 18px; box-shadow: 0 13px 68px rgba(8,9,12,.29); margin-bottom: 25px;'>
+                            <img style='margin-left:8px; width: 95%; max-width: 400px; display: block; border-radius: 21px; box-shadow: 0 13px 68px rgba(8,9,12,.29);' src='/img/rules/site.png' alt=''>
+                            <h3 class="text-center vertical-align-middle text-dark" style='margin: 10px 0 15px;'>Правила сайта</h3>
+                            <a href='/rules-site' class='text-decoration-none'><button type="button" class="btn btn-lg btn-outline-primary" style = 'box-shadow: 0 13px 68px rgba(8,9,12,.29); min-width: 150px; margin-bottom: 10px'>Перейти</button></a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="mx-auto bg-light" style='max-width: 400px; max-height:350px; padding: 15px 15px 15px 15px; border-radius: 18px; box-shadow: 0 13px 68px rgba(8,9,12,.29); margin-bottom: 25px;'>
+                            <img style='margin-left:8px; width: 95%; max-width: 400px; display: block; border-radius: 21px; box-shadow: 0 13px 68px rgba(8,9,12,.29);' src='/img/rules/user-agreement.png' alt=''>
+                            <h3 class="text-center vertical-align-middle text-dark" style='margin: 10px 0 15px;'>Польз. соглашение</h3>
+                            <a href='/user-agreement' class='text-decoration-none'><button type="button" class="btn btn-lg btn-outline-primary" style = 'box-shadow: 0 13px 68px rgba(8,9,12,.29); min-width: 150px; margin-bottom: 10px'>Перейти</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <%- include('./partials/footer.ejs'); %>
+
+            <%- include('./partials/body-scripts.ejs'); %>
+</body>
+
+</html>

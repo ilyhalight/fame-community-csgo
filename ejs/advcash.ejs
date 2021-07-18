@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('./partials/head.ejs'); %>
+</head>
+
+<body>
+    <%- include('./partials/navbar.ejs'); %>
+
+        <main class="form-signin" style='margin-bottom: 98px;'>
+            <div class="container text-center">
+                <form style='margin-top: 150px'>
+                    <div class="mx-auto bg-light" style='max-width: 750px; padding: 15px 15px 15px 15px; border-radius: 18px; box-shadow: 0 13px 68px rgba(8,9,12,.29)'>
+                        <h1 class="text-center text-dark" style='margin: 10px 0 35px'>Пополнение через AdvCash</h1>
+                        <a href="/refill" class='text-secondary text-decoration-none'>Назад</a>
+                        <p class='text-center' style='margin-bottom: 250px'>
+                            <a href="/img/refill/advcash/photo.png" class="ulightbox" target="_blank" title="Нажмите, для просмотра в полном размере"><img src="/img/refill/advcash/photo.png" alt="Иллюстрация" align='left' style='border-radius: 15px; max-width: 325px'></a>
+                            Кошелек или Email получателя: <br><span class='text-bold text-success'>R 2674 8679 7534</span><br> Сумма к пополнению: <br><span class='text-bold text-success'>*Цена выбранной привилегии*</span><br> Примечание: <br><span class='text-bold text-success'>*Ссылка на ваш стим*</span>
+                        </p>
+
+                        <span class='text-danger'>Предупреждение! Не ставьте "код протекции", иначе вы не получите привилегии!</span><br>
+                        <a class='text-decoration-none' id='refill-link' href='https://wallet.advcash.com/pages/transfer/wallet'><button type="button" class="btn btn-lg btn-outline-primary" style = 'box-shadow: 0 13px 68px rgba(8,9,12,.29); min-width: 150px; margin: 30px 0 10px'>Пополнить</button></a>
+                    </div>
+                </form>
+            </div>
+        </main>
+        <%- include('./partials/footer.ejs'); %>
+
+            <%- include('./partials/body-scripts.ejs'); %>
+</body>
+
+</html>

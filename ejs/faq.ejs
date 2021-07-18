@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./partials/head.ejs'); %>
+</head>
+<body>
+    <%- include('./partials/navbar.ejs'); %>
+
+    <div>
+        <div class="container">
+            <div class="text-center text-dark" style = 'padding: 0px 0px 80px'>
+                <h1 style = 'margin-top: 190px'>Часто задаваемые вопросы</h1>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="container">
+            <div class="contents">
+                <h3 class = 'text-dark'>1. Оглавление</h3>
+                <ol style = 'margin-left: 50px'>
+                    <li><a class = 'text-decoration-none text-secondary' href = '#contents' onclick="slowScroll('#contents')">Оглавление</a></li>
+                    <li><a class = 'text-decoration-none text-secondary' href = '#privilege' onclick="slowScroll('#privilege')">Привилегии</a></li>
+                    <ol>
+                        <li><a class = 'text-decoration-none text-secondary' href = '#privilege-how-buy-q' onclick="slowScroll('#privilege-how-buy-q')">Как купить привилегию?</a></li>
+                        <li><a class = 'text-decoration-none text-secondary' href = '#privilege-return-money-q' onclick="slowScroll('#privilege-return-money-q')">Как вернуть потраченные деньги?</a></li>
+                        <li><a class = 'text-decoration-none text-secondary' href = '#privilege-not-come-q' onclick="slowScroll('#privilege-not-come-q')">Не пришла привилегия.</a></li>
+                        <li><a class = 'text-decoration-none text-secondary' href = '#privilege-no-access-q' onclick="slowScroll('#privilege-no-access-q')">Нет доступа к /admin.</a></li>
+                        <li><a class = 'text-decoration-none text-secondary' href = '#privilege-use-vip-q' onclick="slowScroll('#privilege-use-vip-q')">Как использовать Вип/Премиум?</a></li>
+                    </ol>
+                </ol>
+            </div>
+            <div class="privilege">
+                <h3 class = 'text-dark'>2. Привилегии</h3>
+                <div class = 'question-answer' style = 'padding-bottom: 30px'>
+                    <h4 class ='privilege-how-buy-q' id = 'privilege-how-buy-q' style = 'margin-left: 50px'>Q: Как купить привилегию?</h4>
+                    <span class ='privilege-how-buy-a' id = 'privilege-how-buy-a' style = 'margin-left: 50px'>A: Вам необходимо перейти на <a class = 'text-decoration-none text-secondary' href = '/donate' data-bs-toggle="tooltip" data-bs-placement="top" title="Ссылка">эту</a> страницу и оплатить выбранную привилегию.</span>
+                </div>
+                <div class = 'question-answer' style = 'padding-bottom: 30px'>
+                    <h4 class ='privilege-return-money-q' id = 'privilege-return-money-q' style = 'margin-left: 50px'>Q: Я купил привилегию, но она мне не понравилась/я решил уйти с сервер, верните деньги! </h4>
+                    <span class ='privilege-return-money-a' id = 'privilege-return-money-a' style = 'margin-left: 50px'>A: Покупая привилегию, вы соглашаетесь с тем, что делаете добровольное пожертвование. Исходя из этого, мы не обязаны возвращать вам деньги за покупку.</span>
+                </div>
+                <div class = 'question-answer' style = 'padding-bottom: 30px'>
+                    <h4 class ='privilege-not-come-q' id = 'privilege-not-come-q' style = 'margin-left: 50px'>Q: Я купил привилегию, но она не появилась в игре.</h4>
+                    <span class ='privilege-not-come-a' id = 'privilege-not-come-a' style = 'margin-left: 50px'>A: На данный момент все привилегии выдаются администрацией проекта в ручном режиме, пожалуйста подождите.</span>
+                </div>
+                <div class = 'question-answer' style = 'padding-bottom: 30px'>
+                    <h4 class ='privilege-no-access-q' id = 'privilege-no-access-q' style = 'margin-left: 50px'>Q: Я купил Админа, но у меня нет доступа к /admin.</h4>
+                    <span class ='privilege-no-access-a' id = 'privilege-no-access-a' style = 'margin-left: 50px'>A: Если вам уже выдали привилегию, то вам следует подождать смены карты. В любом другом случае, рекомендуем обратиться в тех.поддержку.</span>
+                </div>
+                <div class = 'question-answer' style = 'padding-bottom: 30px'>
+                    <h4 class ='privilege-use-vip-q' id = 'privilege-use-vip-q' style = 'margin-left: 50px'>Q: Я купил Вип/Премиум, как им пользоваться?</h4>
+                    <span class ='privilege-use-vip-a' id = 'privilege-use-vip-a' style = 'margin-left: 50px'>A: Вам необходимо зайти на сервер и прописать команду <strong>!vip</strong>, чтобы у вас появилось меню с доступными вам возможностями.</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <%- include('./partials/footer.ejs'); %>
+
+    <%- include('./partials/body-scripts.ejs'); %>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./partials/head.ejs'); %>
+</head>
+<body>
+    <%- include('./partials/navbar.ejs'); %>
+
+    <div>
+        <div class="container">
+            <div class="text-center text-dark" style = 'padding: 0px 0px 80px'>
+                <h1 style = 'margin-top: 190px'>Подробнее о Админе</h1>
+                <a href="/donate" class = 'text-secondary text-decoration-none'>Назад</a>
+            </div>
+        </div>
+    </div>
+    <div class="container marketing">
+        <div class="row">
+            <div class="col-lg-4">
+                <img class="bd-placeholder-img rounded-circle" width="140" height="140" src = '/img/donate/admin/prefix.png' aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title></img>
+                <h2>Префиксы</h2>
+                <p>Обладатели Админа имеют доступ к нескольким префиксам на выбор</p>
+            </div>
+            <div class="col-lg-4">
+                <img class="bd-placeholder-img rounded-circle" width="140" height="140" src = '/img/donate/admin/command.png' aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title></img>
+                <h2>Быстрые команды</h2>
+                <p>Обладатели Админа имеют доступ к /admin</p>
+            </div>
+            <div class="col-lg-4">
+                <img class="bd-placeholder-img rounded-circle"width="140" height="140" src = '/img/donate/gift.png' aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title></img>    
+                <h2>Бонусы</h2>
+                <p>Обладатели Админа получают в 2 раза больше опыта и кредитов. Так же у них действует 20% скидка в /shop</p>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-lg-4">
+                <img class="bd-placeholder-img rounded-circle" width="140" height="140" src = '/img/donate/admin/admin.png' aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title></img>
+                <h2>Администрирование</h2>
+                <p>Обладатели Админа имеют доступ к командам /kick, /ban, /warn, /mute</p>
+            </div>
+            <div class="col-lg-4">
+                <img class="bd-placeholder-img rounded-circle" width="140" height="140" src = '/img/donate/admin/round.png' aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title></img>
+                <h2>Кастомные раунды</h2>
+                <p>Обладатели Админа имеют доступ к проведению кастомных раундов с помощью команды /round</p>
+            </div>
+            <div class="col-lg-4">
+                <img class="bd-placeholder-img rounded-circle"width="140" height="140" src = '/img/donate/gift.png' aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title></img>    
+                <h2>Бонусы</h2>
+                <p>Обладатели Админа получают в 2 раза больше опыта и кредитов. Так же у них действует 20% скидка в /shop.</p>
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Уникальные скины для<span class="text-muted"> Админов</span></h2>
+                <p class="lead">Обладатели Админ-статуса имеют эксклюзивные скины, доступные только донатерам: Терминатор и Дэдпул</p>
+            </div>
+            <div class="col-md-5">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto rounded-pill" src = '/img/donate/admin/skin.png' aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title></img>
+            </div>
+        </div>
+    </div>
+
+
+    <%- include('./partials/footer.ejs'); %>
+
+    <%- include('./partials/body-scripts.ejs'); %>
+</body>
+</html>

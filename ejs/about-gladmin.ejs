@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./partials/head.ejs'); %>
+</head>
+<body>
+    <%- include('./partials/navbar.ejs'); %>
+
+    <div>
+        <div class="container">
+            <div class="text-center text-dark" style = 'padding: 0px 0px 80px'>
+                <h1 style = 'margin-top: 190px'>Подробнее о Гл.Админе</h1>
+                <a href="/donate" class = 'text-secondary text-decoration-none'>Назад</a>
+            </div>
+        </div>
+    </div>
+    <div class="container marketing">
+        <div class="row">
+            <div class="col-lg-4">
+                <img class="bd-placeholder-img rounded-circle" width="140" height="140" src = '/img/donate/gladmin/prefix.png' aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title></img>
+                <h2>Префиксы</h2>
+                <p>Обладатели Гл.Админа имеют доступ к нескольким префиксам на выбор</p>
+            </div>
+            <div class="col-lg-4">
+                <img class="bd-placeholder-img rounded-circle" width="140" height="140" src = '/img/donate/gladmin/command.png' aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title></img>
+                <h2>Все команды</h2>
+                <p>Обладатели Гл.Админа имеют доступ ко всем командам</p>
+            </div>
+            <div class="col-lg-4">
+                <img class="bd-placeholder-img rounded-circle"width="140" height="140" src = '/img/donate/gift.png' aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title></img>    
+                <h2>Бонусы</h2>
+                <p>Обладатели Гл.Админа получают в 2 раза больше опыта и кредитов. Так же у них действует 20% скидка в /shop</p>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-lg-4">
+                <img class="bd-placeholder-img rounded-circle" width="140" height="140" src = '/img/donate/gladmin/admin-panel.png' aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title></img>
+                <h2>Админ-панель</h2>
+                <p>Обладатели Гл.Админа имеют доступ к Админ-панеле в /shop и /admin</p>
+            </div>
+            <div class="col-lg-4">
+                <img class="bd-placeholder-img rounded-circle" width="140" height="140" src = '/img/donate/gladmin/partner.png' aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title></img>
+                <h2>Партнерский код</h2>
+                <p>Обладатели Гл.Админа имеют собственный партнерский код. Чтобы его получить перейдите по этой <a class = 'text-decoration-none text-secondary' href = '/manual/partner-code' data-bs-toggle="tooltip" data-bs-placement="top" title="Ссылка">ссылке</a>.</p>
+            </div>
+        </div>
+        <br>
+    </div>
+
+
+    <%- include('./partials/footer.ejs'); %>
+
+    <%- include('./partials/body-scripts.ejs'); %>
+</body>
+</html>

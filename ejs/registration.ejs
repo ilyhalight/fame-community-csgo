@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./partials/head.ejs'); %>
+</head>
+<body>
+    <%- include('./partials/navbar.ejs'); %>
+
+    <main class="form-signin" style = 'height: 78vh;'>
+        <div class="container text-center">
+            <form style = 'margin-top: 150px'>
+                <div class="mx-auto bg-light" style = 'max-width: 400px; padding: 15px 15px 15px 15px; border-radius: 18px; box-shadow: 0 13px 68px rgba(8,9,12,.29)'>
+                    <h1 class="text-center text-dark" style = 'margin: 10px 0 35px'>Регистрация</h1>
+                    <input type="email" class="form-control border-0 rounded-pill" aria-describedby="emailHelp" placeholder="Логин" style = 'box-shadow: 0 13px 68px rgba(8,9,12,.29); padding-left: 15px; margin-bottom: 25px'>
+                    <input type="email" class="form-control border-0 rounded-pill" aria-describedby="emailHelp" placeholder="E-mail" style = 'box-shadow: 0 13px 68px rgba(8,9,12,.29); padding-left: 15px; margin-bottom: 25px'>
+                    <input type="password" class="form-control border-0 rounded-pill" aria-describedby="passwordHelp" placeholder="Пароль" style = 'box-shadow: 0 13px 68px rgba(8,9,12,.29); padding-left: 15px; margin-bottom: 25px'>
+                    <input type="password" class="form-control border-0 rounded-pill" aria-describedby="passwordHelp" placeholder="Повторите пароль" style = 'box-shadow: 0 13px 68px rgba(8,9,12,.29); padding-left: 15px; margin-bottom: 10px'>
+
+                    <div class="form-check text-start" style = 'margin-left: 10px; margin-bottom: 60px'>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                        <label class="form-check-label" for="flexCheckChecked">Я согласен с <a class = 'text-primary text-decoration-none' href = '/rules'>правилами</a> сайта.</label>
+                    </div>
+                    <button type="button" class="btn btn-lg btn-outline-primary" style = 'box-shadow: 0 13px 68px rgba(8,9,12,.29); min-width: 150px; margin-bottom: 10px'>Создать аккаунт</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+
+    <%- include('./partials/footer.ejs'); %>
+
+    <%- include('./partials/body-scripts.ejs'); %>
+</body>
+</html>

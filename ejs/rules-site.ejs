@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('./partials/head.ejs'); %>
+</head>
+
+<body>
+    <%- include('./partials/navbar.ejs'); %>
+
+        <div>
+            <div class="container">
+                <div class="text-center text-dark" style='padding: 0px 0px 80px'>
+                    <h1 style='margin-top: 190px'>Правила сайта</h1>
+                    <a href="/rules" class='text-secondary text-decoration-none'>Назад</a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="container">
+                <div class="rules-site" id='rules-site'>
+                    <h4 class='text-dark'>1. Пользователь обязан соблюдать все правила, установленные настоящими <a class='text-decoration-none text-primary' href='#' nclick="slowScroll('#rules-site')">«Правилами сайта»</a>.</h4>
+                    <h4 class='text-dark'>2. Запрещено покупать внутриигровые привилегии в обход сайта.</h4>
+                    <h4 class='text-dark'>3. Запрещено создавать и/или использовать на сайте ботов.</h4>
+                    <h4 class='text-dark'>4. Запрещено использовать/распространять уязвимости сайта.</h4>
+                    <h4 class='text-dark'>5. Запрещено совершать любые действия, затрудняющие или делающие невозможным доступ к сайту другим пользователям.</h4>
+                    <h4 class='text-dark'>6. Запрещено распространение, использование или намеренное получение информации, позволяющей получить доступ к учетным записям других пользователей.</h4>
+                    <h4 class='text-dark' style='margin-bottom: 225px'>7. Запрещено использование скриптов.</h4>
+                </div>
+            </div>
+
+
+            <%- include('./partials/footer.ejs'); %>
+
+                <%- include('./partials/body-scripts.ejs'); %>
+</body>
+
+</html>
