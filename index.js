@@ -77,12 +77,16 @@ app.get('/user-agreement', (req, res) => {
 })
 
 // Правила
-app.get('/rules', (req, res) => {
-    res.render('rules', { title: 'К ознакомлению', active: 'none' })
+app.get('/for-familiarization', (req, res) => {
+    res.render('for-familiarization', { title: 'К ознакомлению', active: 'none' })
 })
 
-app.get('/rules-server', (req, res) => {
-    res.render('rules-server', { title: 'Правила сервера', active: 'none' })
+app.get('/rules-csgo-server', (req, res) => {
+    res.render('rules-csgo-server', { title: 'Правила CS:GO сервера', active: 'none' })
+})
+
+app.get('/rules-minecraft-server', (req, res) => {
+    res.render('rules-minecraft-server', { title: 'Правила Minecraft сервера', active: 'none' })
 })
 
 app.get('/rules-site', (req, res) => {
