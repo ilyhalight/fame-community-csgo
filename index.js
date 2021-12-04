@@ -1,8 +1,9 @@
 const express = require('express');
 const path = require('path');
+require('dotenv').config();
 
 const app = express()
-const PORT = 8080
+const PORT = process.env.PORT || 5000
 
 app.set('view engine', 'ejs')
 app.set('views', path.resolve(__dirname, 'ejs'))
@@ -45,8 +46,16 @@ app.get('/donate/about-roulette', (req, res) => {
 
 
 // Пополнение
-app.get('/refill', (req, res) => {
-    res.render('refill', { title: 'Пополнение', active: 'none' })
+app.get('/refill-select', (req, res) => {
+    res.render('refill-select', { title: 'Выбор метода пополнения', active: 'none' })
+})
+
+app.get('/refill-auto', (req, res) => {
+    res.render('refill-auto', { title: 'Пополнение через автодонат', active: 'none', key: process.env.secret_word })
+})
+
+app.get('/refill-manual', (req, res) => {
+    res.render('refill-manual', { title: 'Пополнение прямым переводом', active: 'none' })
 })
 
 app.get('/refill/advcash', (req, res) => {
@@ -89,10 +98,19 @@ app.get('/authorization', (req, res) => {
     res.render('authorization', { title: 'Авторизация', active: 'authorization' })
 })
 
+
 app.get('/registration', (req, res) => {
     res.render('registration', { title: 'Регистрация', active: 'registration' })
 })
 
+// Платежки успех / неудача
+app.get('/refill-success', (req, res) => {
+    res.render('success', { title: 'Оплата прошла', active: 'success' })
+})
+
+app.get('/refill-fail', (req, res) => {
+    res.render('fail', { title: 'Оплата не прошла', active: 'fail' })
+})
 
 async function startApp() {
     try {

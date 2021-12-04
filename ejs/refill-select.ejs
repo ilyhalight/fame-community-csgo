@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./partials/head.ejs'); %>
+</head>
+<body>
+    <%- include('./partials/navbar.ejs'); %>
+
+    <main class="form-signin" style = 'height: 78vh;'>
+        <div class="container text-center">
+            <form style = 'margin-top: 150px'>
+                <div class="mx-auto bg-light" style = 'max-width: 750px; padding: 15px 15px 15px 15px; border-radius: 18px; box-shadow: 0 13px 68px rgba(8,9,12,.29)'>
+                    <h1 class="text-center text-dark" style = 'margin: 10px 0 35px'>Выбор метода пополнения</h1>
+                    <p class = 'text-center text-dark fs-5'>Не забывайте указывать ссылку на ваш стим аккаунт в описание перевода, если вы оплачиваете в ручную.</p>
+                    <div class="row row-cols-1 row-cols-md-2 text-center">
+                        <div class="col">
+                            <div class="mx-auto bg-light border border-primary" id = 'auto-refill' style='max-width: 200px; height: auto; padding: 15px 15px 15px 15px; border-radius: 18px; box-shadow: 0 13px 68px rgba(8,9,12,.29); margin-bottom: 45px; cursor: pointer'>
+                                <span class = 'text-dark text-center'>Enot.io</span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="mx-auto bg-light" id = 'manual-refill' style='max-width: 200px; padding: 15px 15px 15px 15px; border-radius: 18px; box-shadow: 0 13px 68px rgba(8,9,12,.29); margin-bottom: 45px; cursor: pointer'>
+                                <span class = 'text-dark text-center'>Ручной платеж</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a class = 'text-decoration-none' id = 'refill-link' href = '#  '><button type="button" class="btn btn-lg btn-outline-primary" style = 'box-shadow: 0 13px 68px rgba(8,9,12,.29); min-width: 150px; margin: 30px 0 10px'>Пополнить</button></a>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script type = "text/javascript" src = "libs/refill-select.js"></script>
+
+    <%- include('./partials/footer.ejs'); %>
+
+    <%- include('./partials/body-scripts.ejs'); %>
+</body>
+</html>
