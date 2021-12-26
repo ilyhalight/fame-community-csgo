@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('./partials/head.ejs'); %>
+</head>
+
+<body>
+    <%- include('./partials/navbar.ejs'); %>
+        <div style='margin-bottom: 165px'>
+            <div class="container">
+                <div class="text-center text-dark" style='padding: 0px 0px 80px'>
+                    <h1 style='margin-top: 190px'>Скачать лаунчер</h1>
+                </div>
+                <div class="row row-cols-1 row-cols-md-3 text-center">
+                    <div class="col">
+                        <div class="mx-auto bg-light" style='max-width: 200px; max-height:280px; width: 200px; height:280px; padding: 15px 15px 15px 15px; border-radius: 18px; box-shadow: 0 13px 68px rgba(8,9,12,.29); margin-bottom: 25px;'>
+                            <img class='mx-auto d-block' style='width: 95%; max-width: 128px; border-radius: 21px; box-shadow: 0 13px 68px rgba(8,9,12,.29);' src='/img/launcher/windows.png' alt='Скачать для Windows'>
+                            <h3 class="card-title text-dark" style='margin: 10px 0 15px;'>Win</h3>
+                            <a href='https://dle.fame-community.ru/launcher/Launcher.exe' class='text-decoration-none'><button type="button" class="btn btn-lg btn-outline-primary" style = 'box-shadow: 0 13px 68px rgba(8,9,12,.29); min-width: 150px; margin-bottom: 10px'>Скачать</button></a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="mx-auto bg-light" style='max-width: 200px; max-height:280px; width: 200px; height:280px; padding: 15px 15px 15px 15px; border-radius: 18px; box-shadow: 0 13px 68px rgba(8,9,12,.29); margin-bottom: 25px;'>
+                            <img class='mx-auto d-block' style='width: 95%; max-width: 128px; max-height: 128px; border-radius: 21px; box-shadow: 0 13px 68px rgba(8,9,12,.29);' src='/img/launcher/linux.png' alt='Скачать для Linux'>
+                            <h3 class="card-title text-dark" style='margin: 10px 0 15px;'>Linux</h3>
+                            <a href='https://dle.fame-community.ru/launcher/Launcher.jar' class='text-decoration-none'><button type="button" class="btn btn-lg btn-outline-primary mx-auto d-block" style = 'box-shadow: 0 13px 68px rgba(8,9,12,.29); min-width: 150px; margin-bottom: 10px'>Скачать</button></a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="mx-auto bg-light" style='max-width: 200px; max-height:280px; width: 200px; height:280px; padding: 15px 15px 15px 15px; border-radius: 18px; box-shadow: 0 13px 68px rgba(8,9,12,.29); margin-bottom: 25px;'>
+                            <img class='mx-auto d-block' style='width: 95%; max-width: 128px; border-radius: 21px; box-shadow: 0 13px 68px rgba(8,9,12,.29);' src='/img/launcher/macos.png' alt='Скачать для MacOS'>
+                            <h3 class="card-title text-dark" style='margin: 10px 0 15px;'>Mac OS</h3>
+                            <a href='https://dle.fame-community.ru/launcher/Launcher.jar' class='text-decoration-none'><button type="button" class="btn btn-lg btn-outline-primary" style = 'box-shadow: 0 13px 68px rgba(8,9,12,.29); min-width: 150px; margin-bottom: 10px;'>Скачать</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <%- include('./partials/footer.ejs'); %>
+
+            <%- include('./partials/body-scripts.ejs'); %>
+</body>
+
+</html>

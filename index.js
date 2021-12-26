@@ -12,9 +12,12 @@ app.use(express.urlencoded({ extended: false }))
 app.use(express.static(path.resolve(__dirname, 'public')))
 
 app.get('/', (req, res) => {
-    res.render('index', { title: 'Fame | Сервера CS:GO', active: 'main' })
+    res.render('index', { title: 'Игровые сервера Fame', active: 'main' })
 })
 
+app.get('/launcher', (req, res) => {
+    res.render('launcher', { title: 'Загрузка лаунчера', active: 'none' })
+})
 
 // Донат
 app.get('/donate', (req, res) => {
@@ -51,7 +54,7 @@ app.get('/refill-select', (req, res) => {
 })
 
 app.get('/refill-auto', (req, res) => {
-    res.render('refill-auto', { title: 'Пополнение через автодонат', active: 'none', key: process.env.secret_word })
+    res.render('refill-auto', { title: 'Пополнение через автоплатёжку', active: 'none', key: process.env.secret_word })
 })
 
 app.get('/refill-manual', (req, res) => {
