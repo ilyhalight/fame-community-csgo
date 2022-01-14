@@ -1,4 +1,5 @@
-const btnAuto = document.getElementById('auto-refill')
+const btnAutoQIWI = document.getElementById('auto-refill-qiwi')
+const btnManualEnot = document.getElementById('manual-refill-enot')
 const btnManual = document.getElementById('manual-refill')
 
 const btnLink = document.getElementById('refill-link')
@@ -25,8 +26,11 @@ function removeClass(element, ecn) {
 }
 
 function removeAllClass() {
-    if(hasClass(btnAuto, "border border-primary")) {
-        removeClass(btnAuto, "border border-primary")
+    if(hasClass(btnAutoQIWI, "border border-primary")) {
+        removeClass(btnAutoQIWI, "border border-primary")
+    }
+    if(hasClass(btnManualEnot, "border border-primary")) {
+        removeClass(btnManualEnot, "border border-primary")
     }
     if(hasClass(btnManual, "border border-primary")) {
         removeClass(btnManual, "border border-primary")
@@ -44,12 +48,20 @@ function getUrlParam(name){
        return decodeURIComponent(name[1]);
 }
 
-btnAuto.onclick = () => {
+btnManualEnot.onclick = () => {
     removeAllClass()
-    addActiveClass(btnAuto)
+    addActiveClass(btnManualEnot)
     var donateMoney = getUrlParam('money')
 
-    btnLink.setAttribute('href', `/refill-auto?money=${donateMoney}`)
+    btnLink.setAttribute('href', `/refill-manual-enot?money=${donateMoney}`)
+}
+
+btnAutoQIWI.onclick = () => {
+    removeAllClass()
+    addActiveClass(btnAutoQIWI)
+    var donateMoney = getUrlParam('money')
+
+    btnLink.setAttribute('href', `/autodonate/qiwi?price=${donateMoney}`)
 }
 
 btnManual.onclick = () => {

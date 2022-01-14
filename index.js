@@ -53,8 +53,8 @@ app.get('/refill-select', (req, res) => {
     res.render('refill-select', { title: 'Выбор метода пополнения', active: 'none' })
 })
 
-app.get('/refill-auto', (req, res) => {
-    res.render('refill-auto', { title: 'Пополнение через автоплатёжку', active: 'none', key: process.env.secret_word })
+app.get('/refill-manual-enot', (req, res) => {
+    res.render('refill-manual-enot', { title: 'Пополнение через платёжку Enot.io', active: 'none', key: process.env.secret_word })
 })
 
 app.get('/refill-manual', (req, res) => {
