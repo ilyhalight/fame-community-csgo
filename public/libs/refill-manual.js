@@ -3,6 +3,7 @@ const btnYoomoney = document.getElementById('refill-yoomoney')
 const btnCards = document.getElementById('refill-cards')
 // const btnAdvCash = document.getElementById('refill-advcash')
 const btnPayeer = document.getElementById('refill-payeer')
+const btnEnotIo = document.getElementById('refill-enot')
 const btnDonationAlerts = document.getElementById('refill-donationalerts')
 const btnDonatePay = document.getElementById('refill-donatepay')
 
@@ -38,6 +39,9 @@ function removeAllClass() {
     // }
     if(hasClass(btnPayeer, "border border-primary")) {
         removeClass(btnPayeer, "border border-primary")
+    }
+    if(hasClass(btnEnotIo, "border border-primary")) {
+        removeClass(btnEnotIo, "border border-primary")
     }
     if(hasClass(btnDonationAlerts, "border border-primary")) {
         removeClass(btnDonationAlerts, "border border-primary")
@@ -94,6 +98,14 @@ btnPayeer.onclick = () => {
     addActiveClass(btnPayeer)
 
     btnLink.setAttribute('href', 'refill/payeer')
+}
+
+btnEnotIo.onclick = () => {
+    removeAllClass()
+    addActiveClass(btnEnotIo)
+    var donateMoney = getUrlParam('money')
+
+    btnLink.setAttribute('href', `/refill-manual-enot?money=${donateMoney}`)
 }
 
 btnDonationAlerts.onclick = () => {
