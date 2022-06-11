@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <%- include('./partials/head-new.ejs'); %>
+    </head>
+
+    <body class="bg-[#1D1D1D]">
+        <div class="text-center">
+            <a href='/' class="text-indigo-600 hover:text-indigo-400">На главную</a>
+            <div class="text-center text-white text-5xl font-semibold mt-32 sm:mt-48">Брут</div>
+            <div class="text-center text-white text-xl font-medium mt-[18px] px-8">Попробуйте подобрать секретный пароль и пройдите наш квест 😉</div>
+            <div class="text-center text-white text-xl font-medium mt-[18px] px-8">Число от 0 до 100</div>
+            <div class="sm:min-w-96 mt-[100px]">
+                <form method="post">
+                    <label class="flex flex-col items-center">
+                        <% if (text !== 'none') { %>
+                            <label for="text" class="-ml-[13.5rem] sm:-ml-[21rem] md:-ml-[23rem] text-sm font-semibold text-[#898989] <%= color %>"><%= text %></label>
+                        <% } else { %>
+                            <label for="text" class="-ml-[13.5rem] sm:-ml-[21rem] md:-ml-[23rem] text-sm font-semibold text-[#898989] <%= color %>">Пароль</label>
+                        <% } %>
+                        <input class="text-lg caret-white text-white rounded-2xl py-3.5 px-3 max-w-md sm:w-2/3 md:w-2/3 indent-14" type="password" name="password" required placeholder="Число от 0 до 100" style="background: linear-gradient(173.37deg, rgba(255, 255, 255, 0.158) -12.17%, rgba(255, 255, 255, 0.13) 101.34%);">
+                        <span class="-mt-[3rem] -ml-[235px] sm:-ml-[360px] md:-ml-[380px] h-10 w-10 rounded-lg flex flex-col items-center" style = 'background: linear-gradient(134.4deg, rgba(23, 74, 206, 0.245) -12.15%, rgba(66, 80, 210, 0.21) 49.11%, rgba(121, 143, 220, 0.175) 107.87%);'>
+                            <img class="flex-1 h-6 w-6" src = '/img/1year/blue_keyboard.svg'></img>
+                        </span>
+                    </label>
+                    <input class='text-white mt-12 text-sm rounded-xl py-3.5 px-8 sm:px-16 hover:cursor-pointer' type="submit" value="Проверить" style = "background: linear-gradient(94.83deg, rgba(90, 109, 255, 0.245) -9.89%, rgba(119, 138, 237, 0.21) 42.58%, rgba(130, 153, 236, 0.175) 136.1%);">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

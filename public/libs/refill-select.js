@@ -1,6 +1,7 @@
 const btnAutoQIWI = document.getElementById('auto-refill-qiwi')
 const btnAutoYooMoney = document.getElementById('auto-refill-yoomoney')
-const btnAutoYooMoneyCard = document.getElementById('auto-refill-yoomoney-card')
+// const btnAutoLava = document.getElementById('auto-refill-lava')
+const btnAutoCrystalPay = document.getElementById('auto-refill-crystalpay')
 const btnManual = document.getElementById('manual-refill')
 
 const btnLink = document.getElementById('refill-link')
@@ -35,8 +36,11 @@ function removeAllClass() {
     if(hasClass(btnAutoYooMoney, "border border-primary")) {
         removeClass(btnAutoYooMoney, "border border-primary")
     }
-    if(hasClass(btnAutoYooMoneyCard, "border border-primary")) {
-        removeClass(btnAutoYooMoneyCard, "border border-primary")
+    // if(hasClass(btnAutoLava, "border border-primary")) {
+    //     removeClass(btnAutoLava, "border border-primary")
+    // }
+    if(hasClass(btnAutoCrystalPay, "border border-primary")) {
+        removeClass(btnAutoCrystalPay, "border border-primary")
     }
     if(hasClass(btnManual, "border border-primary")) {
         removeClass(btnManual, "border border-primary")
@@ -70,12 +74,20 @@ btnAutoYooMoney.onclick = () => {
     btnLink.setAttribute('href', `/autodonate/yoomoney?price=${donateMoney}`)
 }
 
-btnAutoYooMoneyCard.onclick = () => {
+// btnAutoLava.onclick = () => {
+//     removeAllClass()
+//     addActiveClass(btnAutoLava)
+//     var donateMoney = getUrlParam('money')
+
+//     btnLink.setAttribute('href', `/autodonate/yoomoney_card?price=${donateMoney}`)
+// }
+
+btnAutoCrystalPay.onclick = () => {
     removeAllClass()
-    addActiveClass(btnAutoYooMoneyCard)
+    addActiveClass(btnAutoCrystalPay)
     var donateMoney = getUrlParam('money')
 
-    btnLink.setAttribute('href', `/autodonate/yoomoney_card?price=${donateMoney}`)
+    btnLink.setAttribute('href', `/autodonate/crystalpay?price=${donateMoney}`)
 }
 
 btnManual.onclick = () => {
