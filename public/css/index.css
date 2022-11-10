@@ -10,3 +10,19 @@
 #answer-link:hover {
     color: #0d6efd;
 }
+
+@media screen and (max-width: 768px) {
+    #footer {
+        flex-direction: column;
+    }
+
+    #badge {
+        width: 100%;
+        white-space: normal;
+    }
+
+    .server-item {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
