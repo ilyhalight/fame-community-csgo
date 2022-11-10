@@ -8,10 +8,11 @@
 <body>
     <%- include('./partials/navbar.ejs'); %>
 
-        <div style='padding: 100px 0 150px' id='start'>
-            <div class="container">
+        <div style='padding: 75px 0' id='start'>
+            <div class="container d-flex flex-column justify-content-center flex-wrap">
+                <span id="badge" class="badge bg-secondary p-4 fs-6">В честь чёрной пятницы, у нас действуют скидки вплоть до 35%! Самое время <a class="text-info" href="/donate">задонатить</a></span>
                 <div class="text-center text-dark">
-                    <h1 style='margin-top: 190px'>Сетка серверов Fame</h1>
+                    <h1 class="mt-4">Сетка серверов Fame</h1>
                     <span class='fs-4'>Приятное и доброе комьюнити, высокий и стабильный онлайн, хороший хостинг - всё это, <br> ждёт вас на нашем сервере</span>
                 </div>
             </div>
@@ -20,19 +21,17 @@
             <div class="container">
                 <h1 class="text-center">Наши сервера</h1>
                 <div class='d-flex' style='margin-top: 80px'>
-                    <div class="server-item" style='background: linear-gradient(to bottom, #212529, #212529); border-radius: 21px; margin-right: 50px'>
-                        <div class="servers-image" style='width: 160px; height: 240px; position: relative;'>
+                    <div class="server-item" style='background: linear-gradient(to bottom, #212529, #212529); border-radius: 21px; margin-left: 35px; margin-right: 50px'>
+                        <div class="servers-image" style='width: 360px; height: 240px; position: relative;'>
+                            <img style='display: block; opacity: 0.5; border-radius: 21px; width:100%; height: 240px;' src='/img/servers/awp_lego.png' alt=''>
+                            <div class='position-absolute text-light text-center fs-5' style='margin: -55px 25px;'>[CS:GO] AWP Bhop #1 128tick</div>
+                            <div class='position-absolute text-light' style='margin: -80px 25px; font-size: 12px'>185.248.100.95:27101</div>
+                        </div>
+                        <!-- <div class="servers-image" style='width: 160px; height: 240px; position: relative;'>
                             <img style='display: block; opacity: 0.5; border-radius: 21px;' src='/img/servers/awp_lego.png' alt=''>
                             <div class='position-absolute text-light text-center' style='margin: -75px 10px; font-size: 14px'>AWP Bhop #1 128tick</div>
                             <div class='position-absolute text-light' style='margin: -100px 25px; font-size: 12px'>185.248.100.95:27101</div>
-                        </div>
-                    </div>
-                    <div class="server-item" style='background: linear-gradient(to bottom, #212529, #212529); border-radius: 21px;  margin-right: 50px'>
-                        <div class="servers-image" style='width: 160px; height: 240px; position: relative;'>
-                            <img style='display: block; opacity: 0.5; border-radius: 21px;' src='/img/servers/public.png' alt=''>
-                            <div class='position-absolute text-light text-center' style='margin: -75px 35px; font-size: 14px'>Public #1 128tick</div>
-                            <div class='position-absolute text-light' style='margin: -100px 25px; font-size: 12px'>193.163.203.20:27015</div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -42,39 +41,51 @@
                 <div class="section-header">
                     <h1 class="text-center">Почему мы?</h1>
                 </div>
-                <div class="d-flex flex-row mb-3" style='margin-top: 50px'>
+                <div class="d-flex flex-row flex-wrap mb-3 justify-content-center" style='margin-top: 50px'>
                     <div class="edges-item" style='flex: 1 1 0; padding-left: 85px; padding-right: 35px; position: relative;'>
                         <img class='edges-icon position-absolute' style='top: 0; left: 28px; z-index: 1;' src='img/svg/updates.svg' alt=''>
-                        <div class="edges-title " style=' margin-bottom: 10px; font-size: 14px; color: #333; text-transform: uppercase;'>Обновления</div>
-                        <div class="edges-text" style='font-size: 15px; color: #999;'>Мы всегда стараемся оставаться в центре событий и обновлять сервер регулярно.</div>
+                        <div class="d-flex flex-column">
+                            <p class="edges-title fs-8 text-uppercase" style="color: #333;">Обновления</p>
+                            <p class="edges-title fs-8 text-uppercase" style="color: #999;">Мы всегда стараемся оставаться в центре событий и обновлять сервер регулярно.</p>
+                        </div>
                     </div>
                     <div class="edges-item" style='flex: 1 1 0; padding-left: 85px; padding-right: 35px; position: relative;'>
                         <img class='edges-icon position-absolute' style='top: 0; left: 28px; z-index: 1;' src='img/svg/rifle.svg' alt=''>
-                        <div class="edges-title" style=' margin-bottom: 10px; font-size: 14px; color: #333; text-transform: uppercase;'>Бесплатные скины</div>
-                        <div class="edges-text" style='font-size: 15px; color: #999;'>Для вашего комфорта, мы сделали все скины и перчатки бесплатными.</div>
+                        <div class="d-flex flex-column">
+                            <p class="edges-title fs-8 text-uppercase" style="color: #333;">Бесплатные скины</p>
+                            <p class="edges-title fs-8 text-uppercase" style="color: #999;">Для вашего комфорта, мы сделали все скины и перчатки бесплатными.</p>
+                        </div>
                     </div>
                     <div class="edges-item" style='flex: 1 1 0; padding-left: 85px; padding-right: 35px; position: relative;'>
                         <img class='edges-icon position-absolute' style='top: 0; left: 28px; z-index: 1;' src='img/svg/admin.svg' alt=''>
-                        <div class="edges-title" style=' margin-bottom: 10px; font-size: 14px; color: #333; text-transform: uppercase;'>Отзывчивая администрация</div>
-                        <div class="edges-text" style='font-size: 15px; color: #999;'>Администрация проекта всегда идёт на встречу игрокам и пытается решить возникшие вопросы.</div>
+                        <div class="d-flex flex-column">
+                            <p class="edges-title fs-8 text-uppercase" style="color: #333;">Отзывчивая администрация</p>
+                            <p class="edges-title fs-8 text-uppercase" style="color: #999;">Администрация проекта всегда идёт на встречу игрокам и пытается решить возникшие вопросы.</p>
+                        </div>
                     </div>
                 </div>
                 <br>
-                <div class="d-flex flex-row mb-3" style='margin-top: 50px'>
+                <div class="d-flex flex-row flex-wrap mb-3 justify-content-center" style='margin-top: 50px'>
                     <div class="edges-item" style='flex: 1 1 0; padding-left: 85px; padding-right: 35px; position: relative;'>
                         <img class='edges-icon position-absolute' style='top: 0; left: 28px; z-index: 1;' src='img/svg/stability.svg' alt=''>
-                        <div class="edges-title" style=' margin-bottom: 10px; font-size: 14px; color: #333; text-transform: uppercase;'>Стабильность</div>
-                        <div class="edges-text" style='font-size: 15px; color: #999;'>Мы постоянно следим за стабильностью и работоспособностью наших серверов.</div>
+                        <div class="d-flex flex-column">
+                            <p class="edges-title fs-8 text-uppercase" style="color: #333;">Стабильность</p>
+                            <p class="edges-title fs-8 text-uppercase" style="color: #999;">Мы постоянно следим за стабильностью и работоспособностью наших серверов.</p>
+                        </div>
                     </div>
                     <div class="edges-item" style='flex: 1 1 0; padding-left: 85px; padding-right: 35px; position: relative;'>
                         <img class='edges-icon position-absolute' style='top: 0; left: 28px; z-index: 1;' src='img/svg/ping.svg' alt=''>
-                        <div class="edges-title" style=' margin-bottom: 10px; font-size: 14px; color: #333; text-transform: uppercase;'>Низкий пинг</div>
-                        <div class="edges-text" style='font-size: 15px; color: #999;'>Все наши сервера расположены в Москве. Благодаря этому, у всех наших игроков будет низкий пинг.</div>
+                        <div class="d-flex flex-column">
+                            <p class="edges-title fs-8 text-uppercase" style="color: #333;">Низкий пинг</p>
+                            <p class="edges-title fs-8 text-uppercase" style="color: #999;">Все наши сервера расположены в Москве. Благодаря этому, у всех наших игроков будет низкий пинг.</p>
+                        </div>
                     </div>
                     <div class="edges-item" style='flex: 1 1 0; padding-left: 85px; padding-right: 35px; position: relative;'>
                         <img class='edges-icon position-absolute' style='top: 0; left: 28px; z-index: 1;' src='img/svg/donate.svg' alt=''>
-                        <div class="edges-title" style=' margin-bottom: 10px; font-size: 14px; color: #333; text-transform: uppercase;'>Косметический донат</div>
-                        <div class="edges-text" style='font-size: 15px; color: #999;'>Большая часть донатных привилегий играет только косметические функции.</div>
+                        <div class="d-flex flex-column">
+                            <p class="edges-title fs-8 text-uppercase" style="color: #333;">Косметический донат</p>
+                            <p class="edges-title fs-8 text-uppercase" style="color: #999;">Большая часть донатных привилегий играет только косметические функции.</p>
+                        </div>
                     </div>
                 </div>
             </div>
