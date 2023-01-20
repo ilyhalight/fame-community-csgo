@@ -7,9 +7,6 @@
 # Другое
 - [Автодонат для этого сайта](https://github.com/ilyhalight/site-autodonate-p2p)
 
-# Демо
-- [Демо сайта](https://fame-community.ru)
-
 # Содержимое .env
 ```
 PORT=1337
